@@ -298,7 +298,7 @@ export default function Index() {
             className="font-cormorant-sc text-xl md:text-2xl text-ivory/90 tracking-[0.3em] opacity-0"
             style={{ animation: "fade-up 1s 1.1s ease-out forwards" }}
           >
-            26 · ИЮНЯ · 2026
+            26.06.26
           </p>
           <div className="mt-8 opacity-0" style={{ animation: "fade-up 1s 1.3s ease-out forwards" }}>
             <div className="w-px h-16 bg-gradient-to-b from-gold to-transparent mx-auto" />
@@ -328,6 +328,7 @@ export default function Index() {
             Мы счастливы пригласить вас стать свидетелями самого важного дня нашей жизни.
             Разделите с нами радость, смех и слёзы счастья.
           </p>
+          <p className="mt-6 font-cormorant-sc text-2xl md:text-3xl text-deep-rose tracking-widest">26.06.26</p>
         </Section>
       </section>
 
