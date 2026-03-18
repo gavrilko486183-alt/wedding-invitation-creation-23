@@ -262,7 +262,7 @@ export default function Index() {
             <a
               key={item.label}
               href={item.href}
-              className="font-cormorant-sc text-xs tracking-widest text-rose/70 hover:text-rose transition-colors hidden sm:block"
+              className="font-cormorant-sc text-xs tracking-widest text-deep-rose hover:text-gold transition-colors hidden sm:block font-bold"
             >
               {item.label}
             </a>
