@@ -306,7 +306,7 @@ export default function Index() {
         </div>
 
         <button
-          onClick={() => document.getElementById('история')?.scrollIntoView({ behavior: 'smooth' })}
+          onClick={() => document.getElementById('приветствие')?.scrollIntoView({ behavior: 'smooth' })}
           className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 animate-bounce cursor-pointer hover:opacity-70 transition-opacity"
         >
           <p className="font-cormorant-sc text-xs tracking-widest text-deep-rose drop-shadow-lg">листайте вниз</p>
@@ -315,7 +315,7 @@ export default function Index() {
       </section>
 
       {/* ПРИВЕТСТВИЕ */}
-      <section className="py-20 px-6 bg-petal/40">
+      <section id="приветствие" className="py-20 px-6 bg-petal/40">
         <Section className="max-w-2xl mx-auto text-center">
           <p className="font-caveat text-gold text-xl mb-4">дорогие гости</p>
           <h2 className="font-cormorant-sc text-3xl md:text-4xl text-deep-rose mb-6">Вы — часть нашей истории</h2>
