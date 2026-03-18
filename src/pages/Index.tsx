@@ -183,7 +183,7 @@ export default function Index() {
             className="font-cormorant-sc text-6xl md:text-8xl text-ivory drop-shadow-lg leading-tight mb-2 opacity-0"
             style={{ animation: "fade-up 1s 0.5s ease-out forwards", textShadow: "0 2px 20px rgba(139,58,58,0.4)" }}
           >
-            Александра
+            Анастасия
           </h1>
           <p className="font-caveat text-gold-light text-4xl md:text-5xl italic opacity-0" style={{ animation: "fade-up 1s 0.7s ease-out forwards" }}>
             &amp;
@@ -192,13 +192,13 @@ export default function Index() {
             className="font-cormorant-sc text-6xl md:text-8xl text-ivory drop-shadow-lg leading-tight mb-4 opacity-0"
             style={{ animation: "fade-up 1s 0.9s ease-out forwards", textShadow: "0 2px 20px rgba(139,58,58,0.4)" }}
           >
-            Дмитрий
+            Артём
           </h1>
           <p
             className="font-cormorant-sc text-xl md:text-2xl text-ivory/90 tracking-[0.3em] opacity-0"
             style={{ animation: "fade-up 1s 1.1s ease-out forwards" }}
           >
-            14 · ИЮНЯ · 2025
+            26 · ИЮНЯ · 2026
           </p>
           <div className="mt-8 opacity-0" style={{ animation: "fade-up 1s 1.3s ease-out forwards" }}>
             <div className="w-px h-16 bg-gradient-to-b from-gold to-transparent mx-auto" />
@@ -240,8 +240,8 @@ export default function Index() {
             {[
               { year: "2019", emoji: "☕", title: "Первая встреча", text: "Случайная встреча в любимом кафе изменила всё. Один взгляд — и мир перестал быть прежним." },
               { year: "2020", emoji: "🌍", title: "Первое путешествие", text: "Вместе мы открыли, что самое прекрасное место на земле — рядом с любимым человеком." },
-              { year: "2022", emoji: "💍", title: "Предложение", text: "На закате, у моря, Дмитрий встал на колено. Александра сказала «да» — и звёзды зажглись ярче." },
-              { year: "2025", emoji: "🕊️", title: "День свадьбы", text: "И вот настал момент, когда две жизни сольются в одну — навсегда и с любовью." },
+              { year: "2022", emoji: "💍", title: "Предложение", text: "На закате, у моря, Артём встал на колено. Анастасия сказала «да» — и звёзды зажглись ярче." },
+              { year: "2026", emoji: "🕊️", title: "День свадьбы", text: "И вот настал момент, когда две жизни сольются в одну — навсегда и с любовью." },
             ].map((event, idx) => (
               <div key={idx} className={`flex gap-6 mb-10 ${idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
                 <div className="flex-1">
@@ -394,11 +394,11 @@ export default function Index() {
       <section id="rsvp" className="py-20 px-6">
         <Section className="max-w-2xl mx-auto">
           <div className="text-center mb-14">
-            <p className="font-caveat text-gold text-xl mb-2">ответить до 1 мая 2025</p>
+            <p className="font-caveat text-gold text-xl mb-2">ответить до 1 мая 2026</p>
             <h2 className="font-cormorant-sc text-3xl md:text-4xl text-deep-rose">Подтвердите участие</h2>
             <Divider />
             <p className="font-cormorant text-lg text-rose/70">
-              Пожалуйста, подтвердите своё присутствие до 1 мая 2025 года.<br />
+              Пожалуйста, подтвердите своё присутствие до 1 мая 2026 года.<br />
               Это поможет нам всё идеально подготовить для вас.
             </p>
           </div>
@@ -409,8 +409,8 @@ export default function Index() {
       {/* FOOTER */}
       <footer className="py-16 px-6 bg-deep-rose text-ivory text-center">
         <div className="max-w-xl mx-auto">
-          <h2 className="font-cormorant-sc text-4xl mb-2">Александра &amp; Дмитрий</h2>
-          <p className="font-caveat text-gold-light text-2xl mb-6">14 июня 2025</p>
+          <h2 className="font-cormorant-sc text-4xl mb-2">Анастасия &amp; Артём</h2>
+          <p className="font-caveat text-gold-light text-2xl mb-6">26 июня 2026</p>
           <Divider />
           <p className="font-cormorant italic text-ivory/60 text-lg">
             «И пусть каждый ваш день будет наполнен любовью,<br />как этот — нашей благодарностью к вам»
@@ -425,7 +425,7 @@ export default function Index() {
               wedding@example.com
             </a>
           </div>
-          <p className="font-cormorant-sc text-xs tracking-widest text-ivory/30 mt-8">С любовью ✦ 2025</p>
+          <p className="font-cormorant-sc text-xs tracking-widest text-ivory/30 mt-8">С любовью ✦ 2026</p>
         </div>
       </footer>
     </div>
