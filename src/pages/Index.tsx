@@ -349,7 +349,7 @@ export default function Index() {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { icon: "Church" as IconName, time: "12:00", title: "Церемония", place: "Дворец бракосочетания, Коммунистический проспект, 39", desc: "Регистрация брака. Просим занять места за 15 минут до начала." },
+              { icon: "Church" as IconName, time: "15:20", title: "Церемония", place: "Дворец бракосочетания, Коммунистический проспект, 39", desc: "Регистрация брака. Просим занять места за 15 минут до начала." },
               { icon: "Music" as IconName, time: "19:00", title: "Торжественный ужин", place: "Ресторан «Горький», Мира, 422", desc: "Живая музыка, танцы, тосты и незабываемые мгновения с близкими." },
             ].map((item, idx) => (
               <div key={idx} className="bg-white/70 backdrop-blur-sm rounded-2xl p-7 border border-gold/20 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
