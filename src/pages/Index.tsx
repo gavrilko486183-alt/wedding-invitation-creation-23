@@ -305,10 +305,13 @@ export default function Index() {
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 animate-bounce">
+        <button
+          onClick={() => document.getElementById('история')?.scrollIntoView({ behavior: 'smooth' })}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 animate-bounce cursor-pointer hover:opacity-70 transition-opacity"
+        >
           <p className="font-cormorant-sc text-xs tracking-widest text-deep-rose drop-shadow-lg">листайте вниз</p>
           <Icon name="ChevronDown" size={28} className="text-deep-rose drop-shadow-lg" />
-        </div>
+        </button>
       </section>
 
       {/* ПРИВЕТСТВИЕ */}
