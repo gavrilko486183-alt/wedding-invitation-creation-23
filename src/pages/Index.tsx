@@ -140,15 +140,6 @@ function RSVPForm() {
           className="w-full border border-gold/40 bg-ivory/60 rounded-xl px-4 py-3 font-cormorant text-lg text-deep-rose placeholder-rose/30 focus:outline-none focus:border-rose/50 transition-colors" />
       </div>
 
-      {/* Количество гостей */}
-      <div>
-        <label className="block font-cormorant-sc text-sm tracking-widest text-rose/80 mb-2">Количество гостей</label>
-        <select value={guests} onChange={e => setGuests(e.target.value)}
-          className="w-full border border-gold/40 bg-ivory/60 rounded-xl px-4 py-3 font-cormorant text-lg text-deep-rose focus:outline-none focus:border-rose/50 transition-colors">
-          {["1","2","3","4"].map(n => <option key={n} value={n}>{n} {n === "1" ? "гость" : "гостя"}</option>)}
-        </select>
-      </div>
-
       {coming === "yes" && <>
         {/* Горячее */}
         <div>
@@ -421,6 +412,23 @@ export default function Index() {
         </Section>
       </section>
 
+      {/* RSVP + МЕНЮ + ПОЖЕЛАНИЯ */}
+      <section id="rsvp" className="py-20 px-6">
+        <Section className="max-w-2xl mx-auto">
+          <div className="text-center mb-14">
+            <p className="font-caveat text-gold text-xl mb-2">ответить до 1 мая 2026</p>
+            <h2 className="font-cormorant-sc text-3xl md:text-4xl text-deep-rose">Подтвердите участие</h2>
+            <Divider />
+            <p className="font-cormorant text-lg text-rose/70">
+              Подтвердите присутствие, выберите меню и оставьте пожелание молодожёнам.
+            </p>
+          </div>
+          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 border border-gold/20 shadow-sm">
+            <RSVPForm />
+          </div>
+        </Section>
+      </section>
+
       {/* КАРТА */}
       <section id="маршрут" className="py-20 px-6 bg-petal/40">
         <Section className="max-w-3xl mx-auto">
@@ -460,23 +468,6 @@ export default function Index() {
                 Открыть в Яндекс Картах
               </a>
             </div>
-          </div>
-        </Section>
-      </section>
-
-      {/* RSVP + МЕНЮ + ПОЖЕЛАНИЯ */}
-      <section id="rsvp" className="py-20 px-6">
-        <Section className="max-w-2xl mx-auto">
-          <div className="text-center mb-14">
-            <p className="font-caveat text-gold text-xl mb-2">ответить до 1 мая 2026</p>
-            <h2 className="font-cormorant-sc text-3xl md:text-4xl text-deep-rose">Подтвердите участие</h2>
-            <Divider />
-            <p className="font-cormorant text-lg text-rose/70">
-              Подтвердите присутствие, выберите меню и оставьте пожелание молодожёнам.
-            </p>
-          </div>
-          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 border border-gold/20 shadow-sm">
-            <RSVPForm />
           </div>
         </Section>
       </section>
