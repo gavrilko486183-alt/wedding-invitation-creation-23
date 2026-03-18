@@ -192,8 +192,12 @@ function RSVPForm() {
   );
 }
 
+const MUSIC_URL = "https://litter.catbox.moe/13nhngadntc60bno.mp3";
+
 export default function Index() {
   const [scrolled, setScrolled] = useState(false);
+  const [playing, setPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -201,8 +205,31 @@ export default function Index() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  function toggleMusic() {
+    const audio = audioRef.current;
+    if (!audio) return;
+    if (playing) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+    setPlaying(!playing);
+  }
+
   return (
     <div className="min-h-screen bg-ivory font-cormorant text-deep-rose overflow-x-hidden">
+
+      {/* Audio */}
+      <audio ref={audioRef} src={MUSIC_URL} loop preload="none" />
+
+      {/* Music button */}
+      <button
+        onClick={toggleMusic}
+        title={playing ? "Выключить музыку" : "Включить музыку"}
+        className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-white/80 backdrop-blur-sm border border-gold/30 shadow-md flex items-center justify-center hover:bg-rose hover:text-ivory hover:border-rose transition-all duration-300 text-rose"
+      >
+        <Icon name={playing ? "Volume2" : "VolumeX"} size={20} />
+      </button>
 
       {/* Falling petals */}
       <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden">
