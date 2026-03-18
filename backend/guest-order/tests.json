@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "POST guest order",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "guest_name": "Тест Гость",
+        "hot_dish": "Говядина",
+        "alcohol": ["Вино", "Шампанское"],
+        "wish": "Совет да любовь!"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {"ok": true},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "GET guest orders",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200
+    }
+  ]
+}

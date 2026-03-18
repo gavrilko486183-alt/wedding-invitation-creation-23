@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
+import GuestMenuSection from "@/components/GuestMenuSection";
 
 type IconName = React.ComponentProps<typeof Icon>["name"];
 
@@ -381,6 +382,9 @@ export default function Index() {
           </div>
         </Section>
       </section>
+
+      {/* МЕНЮ И ПОЖЕЛАНИЯ */}
+      <GuestMenuSection />
 
       {/* RSVP */}
       <section id="rsvp" className="py-20 px-6">
