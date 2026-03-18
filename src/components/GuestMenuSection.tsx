@@ -4,19 +4,19 @@ import Icon from "@/components/ui/icon";
 const GUEST_ORDER_URL = "https://functions.poehali.dev/eecccb17-ab4d-4755-9f80-b05e364a831a";
 
 const HOT_DISHES = [
-  { id: "beef", label: "Говядина", emoji: "🥩", desc: "Запечённая говядина с соусом из красного вина" },
-  { id: "salmon", label: "Лосось", emoji: "🐟", desc: "Филе лосося с лимонным маслом и зеленью" },
-  { id: "chicken", label: "Курица", emoji: "🍗", desc: "Куриное филе с трюфельным соусом" },
-  { id: "vegan", label: "Вегетарианское", emoji: "🥦", desc: "Овощной рататуй с пармезаном" },
+  { id: "halibut", label: "Стейк из палтуса с рисом", emoji: "🐟", desc: "Нежный стейк из палтуса, поданный с ароматным рисом" },
+  { id: "pork", label: "Стейк из свинины на углях с картофельными дольками", emoji: "🥩", desc: "Сочный стейк на углях с хрустящим картофелем" },
+  { id: "lamb", label: "Седло ягнёнка со спаржей гриль", emoji: "🍖", desc: "Изысканное седло ягнёнка с запечённой спаржей" },
+  { id: "bulgogi", label: "Пульгоги", emoji: "🥢", desc: "Корейская говядина в маринаде с овощами" },
 ];
 
 const ALCOHOL_OPTIONS = [
-  { id: "champagne", label: "Шампанское", emoji: "🥂" },
-  { id: "wine_red", label: "Красное вино", emoji: "🍷" },
-  { id: "wine_white", label: "Белое вино", emoji: "🍾" },
-  { id: "whiskey", label: "Виски", emoji: "🥃" },
+  { id: "cognac", label: "Коньяк", emoji: "🥃" },
   { id: "vodka", label: "Водка", emoji: "🍸" },
-  { id: "beer", label: "Пиво", emoji: "🍺" },
+  { id: "wine_red", label: "Вино красное полусладкое", emoji: "🍷" },
+  { id: "wine_rose", label: "Розовое полусухое", emoji: "🌸" },
+  { id: "champagne_sweet", label: "Шампанское сладкое", emoji: "🥂" },
+  { id: "champagne_semi", label: "Шампанское полусухое", emoji: "🍾" },
   { id: "none", label: "Не пью", emoji: "🧃" },
 ];
 
