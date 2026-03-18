@@ -305,7 +305,8 @@ export default function Index() {
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 animate-bounce">
+          <p className="font-cormorant-sc text-xs tracking-widest text-ivory/70">листайте вниз</p>
           <Icon name="ChevronDown" size={24} className="text-ivory/70" />
         </div>
       </section>
